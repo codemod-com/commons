@@ -9,8 +9,10 @@ import type {
   Property,
 } from "jscodeshift";
 
-import { getFunctionName } from "@codemod.com/codemod-utils/dist/jscodeshift/function.js";
-import { getFunctionComponents } from "@codemod.com/codemod-utils/dist/jscodeshift/react.js";
+import {
+  getFunctionComponents,
+  getFunctionName,
+} from "@codemod.com/codemod-utils";
 
 const getComponentStaticPropValue = (
   j: JSCodeshift,
